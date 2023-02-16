@@ -1,4 +1,5 @@
 
+
 /* 
 
     You can write your own styles here...
@@ -10,3 +11,56 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+
+
+.container {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+	background-color: #f3f1d4;
+	color: #333;
+    border-radius: 20px;
+}
+
+input[type="text"] {
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	margin-bottom: 3px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+li {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+  
+li:hover .delete-button {
+	display: block;
+  }
+  
+  .delete-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+  }
+
+.fa-trash-alt {
+	cursor: pointer;
+	color: #d9534f;
+	margin-top: 12px;
+	margin-right: 12px;
+}
